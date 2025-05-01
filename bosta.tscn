@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://qwvsu8sdqovv"]
+
+[ext_resource type="Script" uid="uid://bsa15ws2rmjm7" path="res://bosta.gd" id="1_eakrk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqr28"]
+size = Vector2(4.5, 1.75)
+
+[node name="bosta" type="Area2D"]
+position = Vector2(25, 11)
+script = ExtResource("1_eakrk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3.25, -0.875)
+shape = SubResource("RectangleShape2D_hqr28")
+
+[node name="bosta" type="ColorRect" parent="CollisionShape2D"]
+offset_left = -1.75
+offset_top = -0.125
+offset_right = 2.25
+offset_bottom = 0.875
+color = Color(0.237367, 0.114043, 4.81308e-08, 1)
+metadata/_edit_use_anchors_ = true
